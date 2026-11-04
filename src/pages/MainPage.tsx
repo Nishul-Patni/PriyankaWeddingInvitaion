@@ -56,10 +56,10 @@ function MainPage() {
                     <section aria-label="The happy couple" className="invitation-names mt-8 flex shrink-0 flex-col items-center sm:mt-9">
                         <div className="invitation-name-block">
                             <h2 className="font-['Great_Vibes',cursive] text-[clamp(3rem,11vw,5rem)] leading-[0.95] text-[#633b34]">
-                                Priyaka
+                                Priyanka
                             </h2>
                             <p className="invitation-family mt-1 max-w-[min(90vw,32rem)] font-['Cormorant_Garamond',serif] text-[clamp(0.82rem,3.3vw,1.08rem)] italic leading-snug text-terracotta">
-                                Daughter of Mrs. Rajni Mehta &amp; Mr. Dhan Singh Mehta
+                                Daughter of Mrs. Rajani Mehta &amp; Mr. Dhan Singh Mehta
                             </p>
                         </div>
 
