@@ -65,7 +65,7 @@ function CountdownPage() {
             <div className="countdown-content">
                 <div className="countdown-copy">
                     <p className="countdown-eyebrow">A Kumaoni celebration</p>
-                    <h1 id="countdown-title">Priyaka <span>&amp;</span> Kartik</h1>
+                    <h1 id="countdown-title">Priyanka <span>&amp;</span> Kartik</h1>
                     <p className="countdown-tagline">Counting down to our forever</p>
 
                     <div className="countdown-timer" role="timer" aria-live="off">
