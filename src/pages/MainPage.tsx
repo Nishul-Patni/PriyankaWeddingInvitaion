@@ -42,7 +42,7 @@ function MainPage() {
                         <p className="mt-2 font-['Cormorant_Garamond',serif] text-[10px] font-medium uppercase tracking-[0.24em] text-terracotta sm:text-xs">
                             Together with our families 
                         </p>
-                        <h1 className="invitation-title mt-1 font-['Great_Vibes',cursive] text-[clamp(1rem,3vw,3rem)] leading-[1.05] text-[#633b34]">
+                        <h1 className="invitation-title mt-1 font-['Great_Vibes',cursive] text-[clamp(2rem,8vw,2.5rem)] leading-[1.05] text-[#633b34] sm:text-[clamp(1rem,3vw,3rem)]">
                             We invite you
                             <br /> To our Wedding
                         </h1>
@@ -56,10 +56,10 @@ function MainPage() {
                     <section aria-label="The happy couple" className="invitation-names mt-8 flex shrink-0 flex-col items-center sm:mt-9">
                         <div className="invitation-name-block">
                             <h2 className="font-['Great_Vibes',cursive] text-[clamp(3rem,11vw,5rem)] leading-[0.95] text-[#633b34]">
-                                Kartik
+                                Priyaka
                             </h2>
                             <p className="invitation-family mt-1 max-w-[min(90vw,32rem)] font-['Cormorant_Garamond',serif] text-[clamp(0.82rem,3.3vw,1.08rem)] italic leading-snug text-terracotta">
-                                Son of Mrs. Deepa Rawat &amp; Mr. Anand Singh Rawat
+                                Daughter of Mrs. Rajni Mehta &amp; Mr. Dhan Singh Mehta
                             </p>
                         </div>
 
@@ -69,10 +69,10 @@ function MainPage() {
 
                         <div className="invitation-name-block">
                             <h2 className="font-['Great_Vibes',cursive] text-[clamp(3rem,11vw,5rem)] leading-[0.95] text-[#633b34]">
-                                Priyanka
+                                Kartik
                             </h2>
                             <p className="invitation-family mt-1 max-w-[min(90vw,32rem)] font-['Cormorant_Garamond',serif] text-[clamp(0.82rem,3.3vw,1.08rem)] italic leading-snug text-terracotta">
-                                Daughter of Mrs. Rajni Mehta &amp; Mr. Dhan Singh Mehta
+                                Son of Mrs. Deepa Rawat &amp; Mr. Anand Singh Rawat
                             </p>
                         </div>
                     </section>
@@ -81,7 +81,7 @@ function MainPage() {
                         <img
                             className="invitation-portrait h-auto max-h-[min(36svh,320px)] w-auto max-w-[min(82vw,400px)] object-contain object-bottom"
                             src={publicAsset("groom-bride.webp")}
-                            alt="Illustration of Kartik and Priyanka in their wedding attire"
+                            alt="Illustration of Priyaka and Kartik in their wedding attire"
                         />
                     </div>
                     <a

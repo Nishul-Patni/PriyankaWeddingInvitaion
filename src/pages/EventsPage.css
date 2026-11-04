@@ -196,6 +196,7 @@
   min-height: 27px;
   align-items: center;
   gap: 6px;
+  margin-bottom: 5px;
   border-radius: 999px;
   background: #f7d6a8;
   padding: 4px 11px;
@@ -278,22 +279,6 @@
   grid-column: 3;
 }
 
-.event-details li.haldi-detail {
-  grid-template-columns: 19px max-content 1fr;
-}
-
-.event-note {
-  grid-column: 2 / -1;
-  justify-self: start;
-  border-radius: 999px;
-  background: #f7d99c;
-  padding: 2px 9px;
-  color: #704324;
-  font-size: 0.83em;
-  font-style: italic;
-  line-height: 1.15;
-}
-
 .events-venue {
   display: flex;
   align-items: flex-start;
@@ -369,18 +354,67 @@
   position: relative;
   grid-area: timeline;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 8px;
   list-style: none;
   padding-top: 9px;
 }
 
+.wedding-day-venue {
+  grid-area: footer;
+  border-top: 1px solid rgb(255 223 165 / 55%);
+  padding-top: 12px;
+  text-align: center;
+}
+
+.wedding-day-venue .events-venue {
+  justify-content: center;
+  margin-top: 0;
+  color: #ffe6bc;
+}
+
+.wedding-day-venue a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgb(255 216 160 / 65%);
+  border-radius: 999px;
+  background: #8b2926;
+  padding: 3px 9px;
+  color: inherit;
+  font-style: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.wedding-day-venue a:hover {
+  background: #6f1e20;
+  transform: translateY(-1px);
+}
+
+.wedding-day-venue a svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+
+.wedding-day-venue a:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid #ffe3b2;
+  outline-offset: 3px;
+}
+
 .wedding-timeline::before {
   position: absolute;
   top: 28px;
-  right: 12.5%;
-  left: 12.5%;
+  right: 16.6667%;
+  left: 16.6667%;
   border-top: 1px dashed rgb(255 222 165 / 80%);
   content: "";
 }
@@ -429,102 +463,6 @@
 .wedding-timeline small {
   color: rgb(255 238 209 / 78%);
   font-size: 0.82em;
-}
-
-.wedding-day-footer {
-  grid-area: footer;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 7px 22px;
-  border-top: 1px solid rgb(255 223 165 / 55%);
-  padding-top: 12px;
-  text-align: center;
-}
-
-.wedding-day-footer .events-venue {
-  margin-top: 0;
-  color: #ffe6bc;
-}
-
-.baraat-route {
-  color: #fff0d6;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(0.98rem, 1.6vw, 1.15rem);
-  font-style: italic;
-}
-
-.baraat-route a,
-.events-map-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  color: inherit;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: rgb(255 216 160 / 68%);
-  text-underline-offset: 3px;
-}
-
-.baraat-route a {
-  border: 1px solid rgb(255 216 160 / 65%);
-  border-radius: 999px;
-  background: #8b2926;
-  padding: 3px 9px;
-  color: #fff2dd;
-  font-style: normal;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 200ms ease, transform 200ms ease;
-}
-
-.baraat-route a:hover {
-  background: #6f1e20;
-  transform: translateY(-1px);
-}
-
-.baraat-route a svg,
-.events-map-link svg {
-  width: 14px;
-  height: 14px;
-  flex: 0 0 auto;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.6;
-}
-
-.events-map-link {
-  margin-top: 10px;
-  border-radius: 999px;
-  background: #8b2926;
-  padding: 7px 12px;
-  color: #fff2dd;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 0.98rem;
-  text-decoration: none;
-  transition: background-color 200ms ease, transform 200ms ease;
-}
-
-.events-map-link:hover {
-  background: #6f1e20;
-  transform: translateY(-1px);
-}
-
-.events-map-link:focus-visible,
-.baraat-route a:focus-visible {
-  border-radius: 3px;
-  outline: 2px solid #8f321f;
-  outline-offset: 3px;
-}
-
-.wedding-day-card .baraat-route a:focus-visible {
-  outline-color: #ffe3b2;
-}
-
-.reception-details {
-  padding-left: 4px;
 }
 
 @media (max-width: 850px) {
@@ -684,25 +622,10 @@
     grid-column: 2;
   }
 
-  .wedding-day-footer {
-    flex-direction: column;
-    gap: 8px;
-    padding-top: 11px;
-  }
-
-  .wedding-day-footer .events-venue {
-    justify-content: center;
-    text-align: left;
-  }
-
-  .reception-details {
-    padding-left: 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .events-entry,
-  .events-map-link {
+  .events-entry {
     transform: none;
     transition-duration: 1ms;
   }

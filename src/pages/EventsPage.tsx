@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const pineResortMap = "https://maps.app.goo.gl/y5jwcZEruMLgAX8w5";
+
 import "./EventsPage.css";
 
 function publicAsset(path: string) {
@@ -127,7 +128,7 @@ function EventsPage() {
                 <p className="events-eyebrow">With joyful hearts, we invite you to</p>
                 <h2 id="events-title">The Wedding Celebrations</h2>
                 <p className="events-intro">
-                    Four days of traditions, blessings, laughter &amp; togetherness.
+                    Three days of traditions, blessings, laughter &amp; togetherness.
                 </p>
                 <div className="events-divider" aria-hidden="true">
                     <span />
@@ -137,7 +138,7 @@ function EventsPage() {
             </header>
 
             <div className="events-list">
-                <EventReveal label="22 November 2026: Ganesh Pooja and Suwal Pathai">
+                <EventReveal label="22 November 2026: Ganesh Pooja, Suwal Pathai and Mahila Sangeet">
                     <div className="event-art">
                         <img
                             src={publicAsset("ganesh-ji-icon.webp")}
@@ -158,14 +159,18 @@ function EventsPage() {
                         <ul>
                             <li>
                                 <span className="event-detail-title">Ganesh Pooja</span>
-                                <span>Morning, according to the auspicious muhurat.</span>
+                                <span>According to the auspicious muhurat</span>
                             </li>
                             <li>
                                 <span className="event-detail-title">Suwal Pathai</span>
-                                <span>As part of the day&apos;s traditional ceremonies.</span>
+                                <span>According to the auspicious muhurat</span>
+                            </li>
+                            <li>
+                                <span className="event-detail-title">Mahila Sangeet</span>
+                                <span>1:00 PM – 5:00 PM</span>
                             </li>
                         </ul>
-                        <Venue>Groom&apos;s family residence</Venue>
+                        <Venue>Bride&apos;s residence: Bhandari Gaon, Gangolihat</Venue>
                     </div>
                 </EventReveal>
 
@@ -188,17 +193,16 @@ function EventsPage() {
                     </div>
                     <div className="event-details">
                         <ul>
-                            <li className="haldi-detail">
+                            <li>
                                 <span className="event-detail-title">Haldi</span>
-                                <span>Morning</span>
-                                <span className="event-note">Exact time to be confirmed</span>
+                                <span>10:00 AM</span>
                             </li>
                             <li>
                                 <span className="event-detail-title">Mehendi</span>
-                                <span>8:00 PM</span>
+                                <span>5:00 PM</span>
                             </li>
                         </ul>
-                        <Venue>Groom&apos;s family residence</Venue>
+                        <Venue>Bride&apos;s residence: Bhandari Gaon, Gangolihat</Venue>
                     </div>
                 </EventReveal>
 
@@ -226,36 +230,27 @@ function EventsPage() {
                             <span className="timeline-motif" aria-hidden="true">
                                 <img src={publicAsset("baraat.webp")} alt="" />
                             </span>
-                            <strong>11:00 AM</strong>
-                            <span>Baraat departure</span>
-                            <small>From the residence</small>
-                        </li>
-                        <li>
-                            <span className="timeline-motif" aria-hidden="true">
-                                <img src={publicAsset("rateli.webp")} alt="" />
-                            </span>
-                            <strong>12:00 PM</strong>
-                            <span>Rateli</span>
+                            <strong>1:00 PM</strong>
+                            <span>Barat Swagat</span>
                         </li>
                         <li>
                             <span className="timeline-motif" aria-hidden="true">
                                 <img src={publicAsset("panigrah.webp")} alt="" />
                             </span>
-                            <strong>Panigrahan Sanskar</strong>
-                            <span>As per confirmed auspicious muhurat</span>
+                            <strong>Panigrah Sanskar</strong>
+                            <span>According to the auspicious muhurat</span>
                         </li>
                         <li>
                             <span className="timeline-motif" aria-hidden="true">
                                 <img src={publicAsset("baraat-return.webp")} alt="" />
                             </span>
                             <strong>5:00 PM</strong>
-                            <span>Baraat return</span>
+                            <span>Barat Vidai</span>
                         </li>
                     </ol>
-                    <div className="wedding-day-footer">
-                        <Venue>Wedding venue: Groom&apos;s family residence</Venue>
-                        <p className="baraat-route">
-                            Baraat travels from the residence to{" "}
+                    <div className="wedding-day-venue">
+                        <Venue>
+                            Wedding venue:{" "}
                             <a href={pineResortMap} target="_blank" rel="noreferrer">
                                 Pine Resort
                                 <svg aria-hidden="true" viewBox="0 0 16 16" fill="none">
@@ -263,35 +258,7 @@ function EventsPage() {
                                     <path d="M12 9v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h4" />
                                 </svg>
                             </a>
-                        </p>
-                    </div>
-                </EventReveal>
-
-                <EventReveal label="25 November 2026: Wedding Reception">
-                    <div className="event-art">
-                        <img
-                            src={publicAsset("reception-icon.webp")}
-                            alt=""
-                            aria-hidden="true"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    </div>
-                    <div className="event-copy">
-                        <DateLabel>Day 04 · 25 November 2026</DateLabel>
-                        <h3>Wedding Reception</h3>
-                        <p className="event-description">
-                            Let&apos;s celebrate the beginning of a beautiful new journey.
-                        </p>
-                    </div>
-                    <div className="event-details reception-details">
-                        <ul>
-                            <li>
-                                <span className="event-detail-title">Time</span>
-                                <span>After 1:00 PM</span>
-                            </li>
-                        </ul>
-                        <Venue>Aashirwad Banquet Hall</Venue>                        
+                        </Venue>
                     </div>
                 </EventReveal>
             </div>

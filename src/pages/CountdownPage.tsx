@@ -65,7 +65,7 @@ function CountdownPage() {
             <div className="countdown-content">
                 <div className="countdown-copy">
                     <p className="countdown-eyebrow">A Kumaoni celebration</p>
-                    <h1 id="countdown-title">Kartik <span>&amp;</span> Priyanka</h1>
+                    <h1 id="countdown-title">Priyaka <span>&amp;</span> Kartik</h1>
                     <p className="countdown-tagline">Counting down to our forever</p>
 
                     <div className="countdown-timer" role="timer" aria-live="off">
@@ -96,7 +96,7 @@ function CountdownPage() {
                 <img
                     className="countdown-couple"
                     src={publicAsset("kartik-priyanka-transparent.webp")}
-                    alt="Kartik and Priyanka in traditional Kumaoni wedding attire"
+                    alt="Priyaka and Kartik in traditional Kumaoni wedding attire"
                     fetchPriority="high"
                 />
             </div>
